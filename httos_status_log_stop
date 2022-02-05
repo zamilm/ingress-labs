@@ -1,0 +1,13 @@
+#!/bin/bash
+
+date=$(date +%y-%m-%d_%H:%M:%S)
+
+        systemctl status httpd
+
+if [[ $(echo $?) -ne 0 ]]
+
+then
+
+        systemctl status httpd > apache_stop_log.$date
+
+fi
