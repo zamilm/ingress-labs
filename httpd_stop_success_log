@@ -1,0 +1,7 @@
+#!/bin/bash
+
+date=$(date +%y-%m-%d_%H:%M:%S)
+
+	systemctl stop httpd 
+
+	systemctl status httpd >> apache_stop_success_log.$date
