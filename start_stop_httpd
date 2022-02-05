@@ -1,0 +1,6 @@
+#!/bin/bash
+
+systemctl $1 httpd
+
+systemctl status httpd &>  log.$(date)
+~                                        
